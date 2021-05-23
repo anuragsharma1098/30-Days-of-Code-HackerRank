@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+// Complete the solve function below.
+void solve(double mc, int tp, int txp) 
+{
+    double t=mc*tp/100;
+    double tx=mc*txp/100;
+    int tc=(int)round(mc+t+tx);    
+    cout<<tc;
+}
+int main()
+{
+    double mc;
+    cin >> mc;
+    int tp;
+    cin >> tp;
+    int txp;
+    cin >> txp; 
+    solve(mc, tp, txp); 
+    return 0;
+}
