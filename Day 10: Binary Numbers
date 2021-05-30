@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+  int n;  
+      cin >> n;  
+      int mc=0,cc = 0;  
+      while (n > 0) {  
+           if (n % 2 == 1){  
+                cc++;  
+                if (cc > mc)  
+                     mc = cc;  
+           } else {  
+                cc = 0;  
+           }  
+           n /= 2;  
+      }  
+      cout << mc; 
+}
